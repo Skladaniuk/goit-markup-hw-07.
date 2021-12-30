@@ -83,14 +83,14 @@ footer {
 }
 
 /* Активное наведение */
-.nav:hover,
-.nav:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: #2196f3;
 }
 
 
-.info:hover,
-.info:focus {
+.auth-nav__link:hover,
+.auth-nav__link:focus {
   color: #2196f3;
 }
 .contakt:hover,
@@ -129,10 +129,10 @@ a {
   cursor: default;
 }
 /* цвета текста */
-.web {
+.logo__web {
   color: var(--accent-color);
 }
-.info {
+.auth-nav__link {
   text-decoration: none;
   color: var(--secondly-text-color);
   font-family: Roboto;
@@ -209,7 +209,7 @@ a {
   padding-bottom: 94px;
 }
 
-.nav {
+.site-nav__link {
   display: block;
  text-decoration: none;
   font-family: Roboto;
@@ -239,7 +239,7 @@ a {
   max-width: 650px;
 }
 
-.hero-button {
+.order-service-button {
   background-color: var(--accent-color);
   color: var(--white-color);
   font-family: Roboto;
@@ -252,8 +252,8 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
   
 }
-.hero-button:hover,
-.hero-button:focus {
+.order-service-button:hover,
+.order-service-button:focus {
   background-color: #188ce8;
 }
 
@@ -304,6 +304,9 @@ a {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-finish {
@@ -379,15 +382,16 @@ a {
   height: 80px;
   align-items: center;
 }
-.nav-conteiner {
+.site-nav__items {
   display: flex;
+  margin-right: 305px;
 }
-.auth-conteiner {
+.auth-nav {
   display: flex;
   margin-left: auto;
 }
 
-.nav-items:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -403,21 +407,13 @@ a {
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-.logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+
 
 .logo-finish {
   margin-bottom: 20px;
 }
 
-.nav-conteiner {
-  margin-right: 305px;
-}
-
-.auth-items:not(:last-child) {
+.auth-nav__item:not(:last-child) {
   margin-right: 30px;
 }
 .hero {
@@ -500,7 +496,7 @@ a {
 
 /* ----------------icon------------- */
 
-.icon-mail {
+.auth-nav__icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -508,12 +504,12 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info:hover .icon-mail,
-.info:focus .icon-mail {
+.auth-nav__link:hover .auth-nav__icon-mail,
+.auth-nav__link:focus .auth-nav__icon-mail {
   fill: var(--accent-color);
 }
 
-.icon-phone {
+.auth-nav__icon-phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -521,8 +517,8 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info:hover .icon-phone,
-.info:focus .icon-phone {
+.auth-nav__link:hover .auth-nav__icon-phone,
+.auth-nav__link:focus .auth-nav__icon-phone {
   fill: var(--accent-color);
 }
 
@@ -694,12 +690,12 @@ h3 {
 }
 
 
-.nav#studia{
+.site-nav__link#studia{
 
   position: relative;
 }
 
-.nav#studia::after{
+.site-nav__link#studia::after{
   display: block;
   position: absolute;
   content: '';
@@ -712,12 +708,12 @@ h3 {
 
 }
 
-.nav#portfolio{
+.site-nav__link#portfolio{
 
   position: relative;
 }
 
-.nav#portfolio::after{
+.site-nav__link#portfolio::after{
   display: block;
   position: absolute;
   content: '';
@@ -857,7 +853,7 @@ padding:  63px 24px;
   
 }
 
-.modal p{
+.modal__title{
   font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -869,11 +865,11 @@ margin-bottom: 12px;
 
 }
 
-.form{
+.modal__modal-form{
   padding: 40px;
 }
 
-.form-field  input{
+.modal__form-field  input{
   display: block;
   width: 100%;
   margin-top: 4px;
@@ -889,7 +885,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
-.form-field textarea{
+.modal__form-field textarea{
   outline: none;
   width: 100%;
   margin-top: 4px;
@@ -915,7 +911,7 @@ color: #757575;
   text-decoration: underline;
 }
 
-.form-field label{
+.modal__form-field label{
   display: block;
   text-align: left;
   font-family: Roboto;
@@ -929,11 +925,11 @@ color: #757575;
 }
 
 
-.form-field input{
+.modal__form-field input{
   padding-left: 42px;
 }
 
-.form-field textarea{
+.modal__form-field textarea{
   border: 1px solid rgba(33, 33, 33, 0.2);
 box-sizing: border-box;
 border-radius: 4px;
@@ -942,7 +938,7 @@ margin-bottom: 20px ;
 height: 120px;
 }
 
-.form-field textarea:placeholder-shown{
+.modal__form-field textarea:placeholder-shown{
   font-family: Roboto;
 font-style: normal;
 font-weight: normal;
@@ -1028,32 +1024,32 @@ cursor: pointer;
 
 }
 
-.form-field input:focus,
-.form-field input:hover{
+.modal__form-field input:focus,
+.modal__form-field input:hover{
   border-color: #188ce8;
   fill: #188ce8;
   cursor: pointer;
 }
-.form-field input:focus + .icon-name,
-.form-field input:hover + .icon-name{
+.modal__form-field input:focus + .icon-name,
+.modal__form-field input:hover + .icon-name{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   fill: #188ce8;
 }
-.form-field input:focus + .icon-tel,
-.form-field input:hover + .icon-tel{
+.modal__form-field input:focus + .icon-tel,
+.modal__form-field input:hover + .icon-tel{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   fill: #188ce8;
 }
-.form-field input:focus + .mail-icon,
-.form-field input:hover + .mail-icon{
+.modal__form-field input:focus + .mail-icon,
+.modal__form-field input:hover + .mail-icon{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   fill: #188ce8;
 }
 
-.form-field input{
+.modal__form-field input{
   outline: none;
 
 
@@ -1061,8 +1057,8 @@ cursor: pointer;
 
 
 
-.form-field textarea:hover,
-.form-field textarea:focus{
+.modal__form-field textarea:hover,
+.modal__form-field textarea:focus{
   border-color: var(--accent-color);
 cursor: pointer;
 }
