@@ -257,7 +257,7 @@ a {
   background-color: #188ce8;
 }
 
-.section-advantages h3 {
+.work__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -298,7 +298,7 @@ a {
   text-align: center;
   margin-bottom: 50px;
 }
-.team h3 {
+.team__name {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -680,7 +680,7 @@ a:hover{
   display: flex;
 }
 
-.footer__links h3 {
+.footer__title {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--white-color);
@@ -1116,7 +1116,7 @@ cursor: pointer;
   
 }
 
-.footer-form h3{
+.footer-form__title{
   margin-bottom: 20px;
   color: var(--white-color);
 }
@@ -1148,11 +1148,11 @@ cursor: pointer;
 }
 
 
-.form-form{
+.footer-form__bag{
   display: flex;
 }
 
-.form-form input{
+.footer-form__bag input{
   outline: none;
   height: 50px;
   width: 358px;
@@ -1177,7 +1177,7 @@ color: rgba(255, 255, 255, 0.6);
 
 }
 
-.send-icon{
+.button-subscribe__send-icon{
   position: absolute;
   top: 50%;
   right: 28px;
@@ -1185,7 +1185,7 @@ color: rgba(255, 255, 255, 0.6);
   
   
 }
-.button-subscribe span{
+.button-subscribe__text{
   display: block;
   width: 109px;
 
