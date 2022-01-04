@@ -510,6 +510,14 @@ color: #757575;
 
 .footer__location {
   margin-bottom: 9px;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height:  1.7;
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
 }
 
 .footer__contakt:not(:last-child) {
