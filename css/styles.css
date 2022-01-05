@@ -276,7 +276,7 @@ a {
   margin-bottom: 50px;
 }
 
-.work-title {
+.section-work__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -450,9 +450,7 @@ a {
 .advantages__title {
   margin-bottom: 10px;
 }
-.our-work {
-  margin-bottom: 94px;
-}
+
 .work {
   display: flex;
 }
