@@ -1,15 +1,18 @@
 .auth-nav {
   display: flex;
-  margin-left: auto;
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 50px;
   }
+}
+
+.auth-conteiner {
+  margin-left: auto;
 }
 
 .auth-nav__link {
   text-decoration: none;
-  color: var(--secondly-text-color);
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
